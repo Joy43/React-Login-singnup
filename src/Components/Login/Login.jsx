@@ -26,6 +26,7 @@ const Login = () => {
             if(result.user.email){
               setSucess('Login sucess')
             }
+            // -------- 
             else{
               alert('please verify your email address')
             }
@@ -93,9 +94,10 @@ sendPasswordResetEmail(auth,email)
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
+                {/* password */}
                 <div className="showbtn inline-flex gap-2 relative ">
                   <input
-                    type={showPassword? 'test':'password'}
+                    type={showPassword? 'text':'password'}
                     name="password" 
                     placeholder="password"
                     className="input input-bordered"
@@ -110,7 +112,8 @@ sendPasswordResetEmail(auth,email)
 
                   {/* forget password */}
                 <label className="label">
-                  <a  onClick={handleforgotPassword} href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                  <a  onClick={handleforgotPassword} href="#" 
+                  className="label-text-alt link link-hover">Forgot password?</a>
                 </label>
 
 
@@ -133,15 +136,7 @@ sendPasswordResetEmail(auth,email)
          <p>Newto this website please  <Link className="border bg-sky-600" to="/heroregister">Register</Link> </p>
         </div>
          
-       </div>
-
-
-
-
-
-
-
-            </div>
+       </div> </div>
             </div>
 
 

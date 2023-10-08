@@ -39,7 +39,7 @@ return;
   .then(result=>{
     console.log(result.user);
     setSucess('user create sucess')
-// --------------update profile-----
+// --------------update profile----------------------------
 updateProfile(result.user,{
   displayName:name,
   photoURL:'https:ssjoy.com'
@@ -47,7 +47,7 @@ updateProfile(result.user,{
 .then(()=>console.log('profile updated'))
 .catch()
 
-    // ------------ send varify-----
+    // ------------ send varify--------------------------------
     sendEmailVerification(result.user)
     .then( ()=>{
       alert('please  cheak your email and verify your account')
@@ -57,7 +57,7 @@ updateProfile(result.user,{
   .catch((error) => {
    console.error(error);
    setRegisterError(error.message);
-    // ..
+    // ..----------------------------------------------
   });
   
 
